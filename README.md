@@ -1,4 +1,4 @@
-# **$Chalk$ $Konsole$**
+# **Chalk Konsole**
 
 A small library which exposes some helpful utilities for using the [Chalk](https://www.npmjs.com/package/chalk) library in the console. _This is an early version and currently contains only a few methods, but will be expanded in the future._
 
