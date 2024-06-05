@@ -1,12 +1,16 @@
 {
   "name": "chalk-konsole",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
   "scripts": {
     "build": "tsc"
   },
+  "files": [
+    "/dist",
+    "/assets"
+  ],
   "homepage": "https://github.com/twilkinson3421/chalk-konsole#readme",
   "repository": {
     "type": "git",
