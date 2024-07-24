@@ -18,12 +18,12 @@ var konsole;
         console.warn(`${chalk.bgYellow(chalk.black(chalk.bold(" WARN ")))} ${message}${konsole.internal.logReason(reason)}`);
     }
     konsole.warn = warn;
-    function info(message) {
-        console.info(`${chalk.bgBlue(chalk.bold(" INFO "))} ${message}\n`);
+    function info(message, reason) {
+        console.info(`${chalk.bgBlue(chalk.bold(" INFO "))} ${message}${konsole.internal.logReason(reason)}`);
     }
     konsole.info = info;
-    function success(message) {
-        console.info(`${chalk.bgGreen(chalk.bold(" SUCCESS "))} ${message}\n`);
+    function success(message, reason) {
+        console.info(`${chalk.bgGreen(chalk.bold(" SUCCESS "))} ${message}${konsole.internal.logReason(reason)}`);
     }
     konsole.success = success;
 })(konsole || (konsole = {}));

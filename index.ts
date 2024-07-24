@@ -13,7 +13,7 @@ namespace konsole {
     }
   }
 
-  export function err(message: string, reason?: any) {
+  export function err(message: string, reason?: string) {
     console.error(
       `${chalk.bgRed(
         chalk.bold(" ERROR ")
@@ -21,7 +21,7 @@ namespace konsole {
     );
   }
 
-  export function warn(message: string, reason?: any) {
+  export function warn(message: string, reason?: string) {
     console.warn(
       `${chalk.bgYellow(
         chalk.black(chalk.bold(" WARN "))
@@ -29,12 +29,20 @@ namespace konsole {
     );
   }
 
-  export function info(message: string) {
-    console.info(`${chalk.bgBlue(chalk.bold(" INFO "))} ${message}\n`);
+  export function info(message: string, reason?: string) {
+    console.info(
+      `${chalk.bgBlue(
+        chalk.bold(" INFO ")
+      )} ${message}${konsole.internal.logReason(reason)}`
+    );
   }
 
-  export function success(message: string) {
-    console.info(`${chalk.bgGreen(chalk.bold(" SUCCESS "))} ${message}\n`);
+  export function success(message: string, reason?: string) {
+    console.info(
+      `${chalk.bgGreen(
+        chalk.bold(" SUCCESS ")
+      )} ${message}${konsole.internal.logReason(reason)}`
+    );
   }
 }
 
