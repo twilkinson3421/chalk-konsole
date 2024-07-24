@@ -31,17 +31,17 @@ namespace konsole {
 
   export function info(message: string, reason?: string) {
     console.info(
-      `${chalk.bgBlue(
-        chalk.bold(" INFO ")
-      )} ${message}${konsole.internal.logReason(reason)}`
+      `${chalk.bgBlue(chalk.bold(" INFO "))} ${chalk.blue(
+        message
+      )}${konsole.internal.logReason(reason)}`
     );
   }
 
   export function success(message: string, reason?: string) {
-    console.info(
-      `${chalk.bgGreen(
-        chalk.bold(" SUCCESS ")
-      )} ${message}${konsole.internal.logReason(reason)}`
+    console.log(
+      `${chalk.bgGreen(chalk.bold(" SUCCESS "))} ${chalk.green(
+        message
+      )}${konsole.internal.logReason(reason)}`
     );
   }
 }

@@ -19,11 +19,11 @@ var konsole;
     }
     konsole.warn = warn;
     function info(message, reason) {
-        console.info(`${chalk.bgBlue(chalk.bold(" INFO "))} ${message}${konsole.internal.logReason(reason)}`);
+        console.info(`${chalk.bgBlue(chalk.bold(" INFO "))} ${chalk.blue(message)}${konsole.internal.logReason(reason)}`);
     }
     konsole.info = info;
     function success(message, reason) {
-        console.info(`${chalk.bgGreen(chalk.bold(" SUCCESS "))} ${message}${konsole.internal.logReason(reason)}`);
+        console.log(`${chalk.bgGreen(chalk.bold(" SUCCESS "))} ${chalk.green(message)}${konsole.internal.logReason(reason)}`);
     }
     konsole.success = success;
 })(konsole || (konsole = {}));
