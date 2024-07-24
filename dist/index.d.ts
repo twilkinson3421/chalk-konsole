@@ -5,5 +5,6 @@ declare namespace konsole {
     function err(message: string, reason?: any): void;
     function warn(message: string, reason?: any): void;
     function info(message: string): void;
+    function success(message: string): void;
 }
 export default konsole;

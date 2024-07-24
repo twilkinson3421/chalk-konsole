@@ -32,6 +32,10 @@ namespace konsole {
   export function info(message: string) {
     console.info(`${chalk.bgBlue(chalk.bold(" INFO "))} ${message}\n`);
   }
+
+  export function success(message: string) {
+    console.info(`${chalk.bgGreen(chalk.bold(" SUCCESS "))} ${message}\n`);
+  }
 }
 
 export default konsole;

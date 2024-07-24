@@ -22,5 +22,9 @@ var konsole;
         console.info(`${chalk.bgBlue(chalk.bold(" INFO "))} ${message}\n`);
     }
     konsole.info = info;
+    function success(message) {
+        console.info(`${chalk.bgGreen(chalk.bold(" SUCCESS "))} ${message}\n`);
+    }
+    konsole.success = success;
 })(konsole || (konsole = {}));
 export default konsole;

@@ -20,8 +20,9 @@ konsole.err("Something went wrong", "This is why");
 
 ## Methods
 
-| Method | Description                                                         |
-| ------ | ------------------------------------------------------------------- |
-| `err`  | Prints an error message with red indicator and optional reason.     |
-| `warn` | Prints a warning message with yellow indicator and optional reason. |
-| `info` | Prints an info message with blue indicator.                         |
+| Method    | Description                                                         |
+| --------- | ------------------------------------------------------------------- |
+| `err`     | Prints an error message with red indicator and optional reason.     |
+| `warn`    | Prints a warning message with yellow indicator and optional reason. |
+| `info`    | Prints an info message with blue indicator.                         |
+| `success` | Prints a success message with green indicator.                      |
